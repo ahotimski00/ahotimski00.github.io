@@ -125,8 +125,8 @@ I focus on applied solutions that can be operationalized, rather than purely the
 
 ## Contact
 
-- **GitHub:** https://alhotimski.com
-- **LinkedIn:** https://www.linkedin.com/in/al-hotimski/
+- **GitHub:** [https://ahotimski00.github.io]
+- **LinkedIn:** [https://www.linkedin.com/in/al-hotimski/]
 - **Resume:** (tbd)
 
 <script>
