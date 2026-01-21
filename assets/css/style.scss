@@ -16,16 +16,28 @@
 }
 
 .carousel {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 1rem;
+  scroll-behavior: smooth;
+}
+
+.carousel figure {
+  scroll-snap-align: start;
+  margin: 0;
+  padding: 0.75rem;
 }
 
 .carousel img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  scroll-snap-align: center;
   border-radius: 6px;
+}
+
+.carousel figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
