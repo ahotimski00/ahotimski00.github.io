@@ -15,17 +15,21 @@
   text-align: center;
 }
 
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 100%;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
 .carousel figure {
-  scroll-snap-align: start;
   margin: 0;
   padding: 0.75rem;
 }
@@ -40,4 +44,18 @@
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 0.75rem;
+  color: #555;
+}
+
+.carousel-btn:hover {
+  color: #000;
+}
+
 
