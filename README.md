@@ -55,6 +55,12 @@ This portfolio highlights end-to-end projects where I designed data pipelines, b
 - Enabled direct outreach to parent companies instead of cold outreach to shell LLCs
 - Created a time series of land ownership for longitudinal analysis
 
+<div class="carousel">
+  <img src="/assets/img/TCF7.jpg" alt="text">
+  <img src="/assets/img/TCF8.jpg" alt="text">
+  <img src="/assets/img/TCF9.jpg" alt="text">
+</div>
+
 [Project details coming soon]
 
 ---
