@@ -60,11 +60,11 @@ This portfolio highlights end-to-end projects where I designed data pipelines, b
 
   <div class="carousel" id="carousel">
     <figure>
-      <img src="/assets/images/TCF7.jpg" alt="TCF7 project image">
+      <img src="/assets/img/TCF7.jpg" alt="TCF7 project image">
       <figcaption>TCF7 visualization (edit caption)</figcaption>
     </figure>
     <figure>
-      <img src="/assets/images/TCF8.jpg" alt="TCF8 project image">
+      <img src="/assets/img/TCF8.jpg" alt="TCF8 project image">
       <figcaption>TCF8 visualization (edit caption)</figcaption>
     </figure>
   </div>
