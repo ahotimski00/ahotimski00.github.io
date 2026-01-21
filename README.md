@@ -55,14 +55,23 @@ This portfolio highlights end-to-end projects where I designed data pipelines, b
 - Enabled direct outreach to parent companies instead of cold outreach to shell LLCs
 - Created a time series of land ownership for longitudinal analysis
 
-<div class="carousel">
-  <img src="/assets/img/TCF10.jpg" alt="text">
-  <img src="/assets/img/TCF7.jpg" alt="text">
-  <img src="/assets/img/TCF8.jpg" alt="text">
-  <img src="/assets/img/TCF9.jpg" alt="text">
-  <img src="/assets/img/TCF11.jpg" alt="text">
-  <img src="/assets/img/TCF12.jpg" alt="text">
+<div class="carousel-wrapper">
+  <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+  <div class="carousel" id="carousel">
+    <figure>
+      <img src="/assets/images/TCF7.jpg" alt="TCF7 project image">
+      <figcaption>TCF7 visualization (edit caption)</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/images/TCF8.jpg" alt="TCF8 project image">
+      <figcaption>TCF8 visualization (edit caption)</figcaption>
+    </figure>
+  </div>
+
+  <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
 </div>
+
 
 [Project details coming soon]
 
@@ -102,4 +111,15 @@ I focus on applied solutions that can be operationalized, rather than purely the
 - **GitHub:** https://alhotimski.com
 - **LinkedIn:** https://www.linkedin.com/in/al-hotimski/
 - **Resume:** (tbd)
+
+<script>
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('carousel');
+  const slideWidth = carousel.clientWidth;
+  carousel.scrollBy({
+    left: direction * slideWidth,
+    behavior: 'smooth'
+  });
+}
+</script>
 
