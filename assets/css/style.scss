@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+.page-header {
+  text-align: center;
+}
+
 .project-name {
   text-align: center;
 }
@@ -10,4 +14,3 @@
 .project-tagline {
   text-align: center;
 }
-
