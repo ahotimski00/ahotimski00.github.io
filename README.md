@@ -67,6 +67,23 @@ This portfolio highlights end-to-end projects where I designed data pipelines, b
       <img src="/assets/img/TCF8.jpg" alt="TCF8 project image">
       <figcaption>TCF8 visualization (edit caption)</figcaption>
     </figure>
+    <figure>
+      <img src="/assets/img/TCF9.jpg" alt="TCF9 project image">
+      <figcaption>TCF8 visualization (edit caption)</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/TCF10.jpg" alt="TCF10 project image">
+      <figcaption>TCF8 visualization (edit caption)</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/TCF11.jpg" alt="TCF11 project image">
+      <figcaption>TCF8 visualization (edit caption)</figcaption>
+    </figure>
+    <figure>
+      <img src="/assets/img/TCF12.jpg" alt="TCF12 project image">
+      <figcaption>TCF8 visualization (edit caption)</figcaption>
+    </figure>
+    
   </div>
 
   <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
