@@ -14,3 +14,18 @@
 .project-tagline {
   text-align: center;
 }
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  scroll-snap-align: center;
+  border-radius: 6px;
+}
+
