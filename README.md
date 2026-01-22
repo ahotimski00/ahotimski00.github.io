@@ -61,27 +61,27 @@ This portfolio highlights end-to-end projects where I designed data pipelines, b
   <div class="carousel" id="carousel">
     <figure>
       <img src="/assets/img/TCF7.jpg" alt="TCF7 project image">
-      <figcaption>TCF7 visualization (edit caption)</figcaption>
+      <figcaption>Referencing Owner Name with the Records database to fetch a parent LLC.</figcaption>
     </figure>
     <figure>
       <img src="/assets/img/TCF8.jpg" alt="TCF8 project image">
-      <figcaption>TCF8 visualization (edit caption)</figcaption>
+      <figcaption>When no identical match is found for the owner instance in the records, we calculate a similarity score to find the most similar record.</figcaption>
     </figure>
     <figure>
       <img src="/assets/img/TCF9.jpg" alt="TCF9 project image">
-      <figcaption>TCF8 visualization (edit caption)</figcaption>
+      <figcaption> </figcaption>
     </figure>
     <figure>
       <img src="/assets/img/TCF10.jpg" alt="TCF10 project image">
-      <figcaption>TCF8 visualization (edit caption)</figcaption>
+      <figcaption>Sample map of parent LLCs in West Virginia.</figcaption>
     </figure>
     <figure>
       <img src="/assets/img/TCF11.jpg" alt="TCF11 project image">
-      <figcaption>TCF8 visualization (edit caption)</figcaption>
+      <figcaption>Sample maps of parent LLCs in WV counties.</figcaption>
     </figure>
     <figure>
       <img src="/assets/img/TCF12.jpg" alt="TCF12 project image">
-      <figcaption>TCF8 visualization (edit caption)</figcaption>
+      <figcaption>We can differentiate the types of changes that occur between timestamps (different owner, boundary, or both).</figcaption>
     </figure>
     
   </div>
