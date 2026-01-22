@@ -11,6 +11,11 @@
   text-align: center;
 }
 
+.site-logo img {
+  max-height: 40px;   /* try 40–70px */
+  width: auto;
+}
+
 .project-tagline {
   text-align: center;
 }
