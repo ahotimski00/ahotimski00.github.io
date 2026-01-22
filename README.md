@@ -119,8 +119,6 @@ My work emphasizes:
 - Scalable, maintainable analytical systems
 - Domain knowledge as a core modeling input
 
-I focus on applied solutions that can be operationalized, rather than purely theoretical modeling.
-
 ---
 
 ## Contact
