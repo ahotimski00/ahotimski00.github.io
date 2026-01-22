@@ -123,8 +123,8 @@ My work emphasizes:
 
 ## Contact
 
-- **GitHub:** [https://ahotimski00.github.io]
-- **LinkedIn:** [https://www.linkedin.com/in/al-hotimski/]
+- **GitHub:** (https://ahotimski00.github.io])[https://ahotimski00.github.io]
+- **LinkedIn:** (https://www.linkedin.com/in/al-hotimski/)[https://www.linkedin.com/in/al-hotimski/]
 - **Resume:** (tbd)
 
 <script>
