@@ -25,13 +25,13 @@ Coursework: Advanced GIS, Remote Sensing, Data Structures, Python Programming, S
 - Built an automated USDA NRCS ACEP easement eligibility screening tool (Python / ArcGIS Pro) capable of regional-scale assessment that NRCS's own tools cannot perform; **reduced analysis time from 20+ hours to 10 minutes (>99%), projecting 240 hours and $12,000/year in savings** at monthly cadence
 - Designed a dynamic geodatabase tracking land parcelization, boundary changes, and ownership transfers across U.S. timberland; built a custom fuzzy-matching package (performance-critical components in C-based Python) to resolve owner name inconsistencies at scale; **reduced manual QA from ~2 weeks to under a day (93%)**
 - Built a child-to-parent LLC hierarchy database enabling outreach at the parent company level rather than individual subsidiaries; built a multi-timestamp ingestion pipeline flagging boundary and ownership changes to track consolidation, divestment, and fragmentation trends
-- Building Salesforce (Locate) to ArcGIS Online integration to automate real-time spatial layer sync, replacing a fully manual project approval and intake process and enabling conservation staff to access up-to-date project boundaries without GIS intervention
-- Applied CCDC (Continuous Change Detection and Classification) in Google Earth Engine across ~20,000 acres to map historical forest disturbance patterns for carbon accounting; produced enterprise-scale spatial datasets covering U.S. timberland ownership, conservation value, and parcel boundaries used for acquisition prioritization and stewardship planning
+- Building Salesforce (Locate) to ArcGIS Online integration to automate real-time spatial layer sync, replacing a fully manual project approval and intake workflow and giving conservation staff direct access to live project boundaries
+- Applied CCDC (Continuous Change Detection and Classification) across ~20,000 acres in Google Earth Engine to map historical forest disturbance for carbon accounting; produced enterprise-scale spatial datasets used to prioritize timberland acquisition and stewardship decisions
 
 ### Research Assistant, PLACES Lab, Boston University *(May-Aug 2025)*
 
-- Validated and interpreted 800+ georeferenced locations spanning 25 years of land cover change; developed QA/QC protocols and review checklists that improved classification consistency and reproducibility across the research team
-- Resolved classification conflicts and data anomalies in collaboration with senior researchers, supporting downstream accuracy assessments for peer-reviewed spatial analysis
+- Validated and interpreted 800+ georeferenced locations spanning 25 years of land cover change; developed QA/QC protocols and review checklists that improved classification consistency across the team
+- Resolved classification conflicts and data anomalies in collaboration with senior researchers
 
 ### Research Project Team Manager, Boston University / Boston Housing Authority *(Sep-Dec 2024)*
 

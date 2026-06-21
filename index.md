@@ -4,7 +4,7 @@ author_profile: true
 title: "Al Hotimski"
 excerpt: "Geospatial Data Scientist"
 ---
-Geospatial Data Scientist with an MS in Remote Sensing and Geospatial Sciences (Environmental Data Science). I design end-to-end data pipelines and machine learning systems for land ownership tracking, fire risk modeling, and conservation planning. At The Conservation Fund, I have built tools that cut analysis time from 20+ hours to 10 minutes and reduced manual QA workloads by 93%.
+Geospatial Data Scientist at **The Conservation Fund** with an MS in Remote Sensing and Geospatial Sciences (Environmental Data Science). I build data systems and analytical models that make sense of the landscape: land ownership, urban growth, fire risk, and conservation opportunity. The tools I have shipped at TCF have cut analysis time from 20+ hours to 10 minutes and reduced manual QA workloads by 93%.
 
 ---
 
@@ -37,9 +37,9 @@ Geospatial Data Scientist with an MS in Remote Sensing and Geospatial Sciences (
 <div class="feature__item">
     <div class="archive__item">
       <div class="archive__item-body">
-        <h2 class="archive__item-title">Land Data Systems</h2>
+        <h2 class="archive__item-title">Conservation Tech</h2>
         <div class="archive__item-excerpt">
-          <p>End-to-end ETL pipelines, relational databases, and ArcGIS-integrated tooling that put geospatial intelligence directly into conservation decisions: USDA grant screening, ownership tracking, and spatial project management.</p>
+          <p>End-to-end systems for land management: USDA grant screening, ownership tracking, and Salesforce-to-ArcGIS workflows built to put spatial intelligence in the hands of people making real decisions.</p>
         </div>
       </div>
     </div>
