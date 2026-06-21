@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-I am an applied data scientist with a background in geospatial analytics, land-use modeling, and environmental data systems. My work focuses on using data science and machine learning to solve real-world problems involving complex ownership structures, spatial change over time, and climate-related risk.
+I am an applied data scientist with an MS in Remote Sensing and Geospatial Sciences (Environmental Data Science) and a background in geospatial analytics, land-use modeling, and environmental data systems. My work focuses on using data science and machine learning to solve real-world problems involving complex ownership structures, spatial change over time, and climate-related risk.
 
 I'm driven by the belief that better data, collected rigorously, analyzed carefully, and communicated clearly, leads to better decisions for landscapes and the communities that depend on them.
 
@@ -42,13 +42,13 @@ Coursework: Advanced GIS, Remote Sensing, Data Structures, Python Programming, S
 Python · R · JavaScript · SQL · Bash · Git · Linux
 
 **GIS & Remote Sensing**
-ArcGIS Pro · ArcGIS Online · QGIS · Google Earth Engine · ENVI · Survey123 · Fulcrum
+ArcGIS Pro · ArcGIS Online · QGIS · Google Earth Engine (cloud-native) · geopandas · shapely · rasterio · ENVI
 
 **Machine Learning**
-scikit-learn · Random Forest · classification · regression · time-series · change detection · record linkage
+scikit-learn · NLTK · classification · regression · NLP · data harmonization · time-series · change detection
 
 **Data Engineering**
-pandas · NumPy · automated pipelines · relational databases · REST APIs · fuzzy matching
+pandas · NumPy · ETL pipelines · relational databases · REST APIs
 
 ---
 

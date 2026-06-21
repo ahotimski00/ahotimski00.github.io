@@ -5,7 +5,7 @@ permalink: /resume/
 author_profile: true
 ---
 
-<!-- Uncomment and update the path below once you add a PDF to assets/ -->
+<!-- TODO: Upload al_hotimski_resume.pdf to assets/ then uncomment the line below -->
 <!-- [Download PDF Resume](/assets/al_hotimski_resume.pdf){: .btn .btn--primary} -->
 
 ---
@@ -25,14 +25,13 @@ Coursework: Advanced GIS, Remote Sensing, Data Structures, Python Programming, S
 - Built an automated USDA NRCS ACEP easement eligibility screening tool (Python / ArcGIS Pro) capable of regional-scale assessment that NRCS's own tools cannot perform; **reduced analysis time from 20+ hours to 10 minutes (>99%), projecting 240 hours and $12,000/year in savings** at monthly cadence
 - Designed a dynamic geodatabase tracking land parcelization, boundary changes, and ownership transfers across U.S. timberland; built a custom fuzzy-matching package (performance-critical components in C-based Python) to resolve owner name inconsistencies at scale; **reduced manual QA from ~2 weeks to under a day (93%)**
 - Built a child-to-parent LLC hierarchy database enabling outreach at the parent company level rather than individual subsidiaries; built a multi-timestamp ingestion pipeline flagging boundary and ownership changes to track consolidation, divestment, and fragmentation trends
-- Integrating Salesforce (Locate) with ArcGIS Online to automate real-time sync of project spatial layers and replace fully manual project approval and intake workflows
-- Applied CCDC across ~20,000 acres in Google Earth Engine to identify historical forest disturbance for carbon accounting; produced enterprise-scale spatial datasets covering U.S. timberland ownership, conservation value, and parcel boundaries
+- Building Salesforce (Locate) to ArcGIS Online integration to automate real-time spatial layer sync, replacing a fully manual project approval and intake process and enabling conservation staff to access up-to-date project boundaries without GIS intervention
+- Applied CCDC (Continuous Change Detection and Classification) in Google Earth Engine across ~20,000 acres to map historical forest disturbance patterns for carbon accounting; produced enterprise-scale spatial datasets covering U.S. timberland ownership, conservation value, and parcel boundaries used for acquisition prioritization and stewardship planning
 
 ### Research Assistant, PLACES Lab, Boston University *(May-Aug 2025)*
 
-- Spatial data editing, validation, and interpretation across 800+ georeferenced locations spanning 25 years of land cover change
-- Executed formal QA/QC and accuracy assessment workflows for classified spatial datasets; developed data validation protocols and review checklists to support reproducibility across team members
-- Resolved classification conflicts and data anomalies in collaboration with senior researchers
+- Validated and interpreted 800+ georeferenced locations spanning 25 years of land cover change; developed QA/QC protocols and review checklists that improved classification consistency and reproducibility across the research team
+- Resolved classification conflicts and data anomalies in collaboration with senior researchers, supporting downstream accuracy assessments for peer-reviewed spatial analysis
 
 ### Research Project Team Manager, Boston University / Boston Housing Authority *(Sep-Dec 2024)*
 
@@ -56,11 +55,11 @@ Coursework: Advanced GIS, Remote Sensing, Data Structures, Python Programming, S
 
 **Languages:** Python · R · SQL · JavaScript · Bash
 
-**GIS & Remote Sensing:** ArcGIS Pro · ArcGIS Online · QGIS · Google Earth Engine · Landsat
+**GIS & Remote Sensing:** ArcGIS Pro · ArcGIS Online · QGIS · Google Earth Engine (cloud-native) · geopandas · shapely · rasterio · Landsat
 
-**Machine Learning & Analysis:** scikit-learn · Random Forest · classification · regression · time-series · change detection · record linkage · fuzzy matching
+**Machine Learning & Analysis:** scikit-learn · NLTK · classification · regression · NLP · data harmonization · time-series · change detection
 
-**Data Engineering:** pandas · NumPy · automated pipelines · relational databases · REST APIs · Git · Linux
+**Data Engineering:** pandas · NumPy · ETL pipelines · relational databases · REST APIs · Git · Linux
 
 **Visualization & Reporting:** Power BI · ArcGIS Online dashboards · matplotlib
 

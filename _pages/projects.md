@@ -13,7 +13,13 @@ toc_icon: "map"
 ## Land Ownership and Boundary Change Detection {#land-ownership}
 
 <!-- TODO: confirm and add Python libraries to Tools line: rapidfuzz, shapely, pandas, recordlinkage -->
-**Tools:** Python · arcpy · ArcGIS Pro · ReGrid · Relational Database · Fuzzy String Matching
+<!-- TODO: Home page ML blurb now says "natural language processing (NLTK)" - update this project's Tools line and description if NLTK is used here, or clarify where NLP fits vs fuzzy matching -->
+**Tools:** Python (arcpy) · ArcGIS Pro · Relational Database · ReGrid · Data Harmonization
+
+**Outcomes:**
+- **93% reduction** in manual QA review effort (from ~2 weeks to under a day)
+- Enabled analysis and outreach at the parent-company level rather than the shell LLC level
+- Produced a versioned, longitudinal record of ownership and parcel geometry changes across the Southeast U.S.
 
 **Core Objective:** Systematically monitor tax parcel data to detect ownership changes and boundary modifications, including partial sell-offs. These changes serve as indicators of areas of strategic interest for acquisitions, conservation planning, and market analysis.
 
@@ -47,10 +53,6 @@ A structured geodatabase pipeline that processes raw parcel data (ReGrid) into a
 - **Industrial-to-private conversion** - flagging when corporate timberland transfers to residential developers or extractive operators
 - **Conservation targeting** - identifying parcels adjacent to protected lands that are at elevated risk, and prioritizing easement outreach accordingly
 
-**Outcomes:**
-- **93% reduction** in manual QA review effort
-- Enabled analysis and outreach at the parent-company level rather than the shell LLC level
-- Produced a versioned, longitudinal record of ownership and parcel geometry changes across the Southeast U.S.
 
 <div class="carousel-wrapper">
   <button class="carousel-btn left" onclick="scrollCarousel('carousel1', -1)">&#10094;</button>
@@ -87,7 +89,7 @@ A structured geodatabase pipeline that processes raw parcel data (ReGrid) into a
 
 ## ACEP Easement Eligibility Screening Tool {#farm-parcel}
 
-**Tools:** Python · arcpy · ArcGIS Pro · ReGrid · USDA SSURGO REST Service · USDA NLCD REST Service
+**Tools:** Python (arcpy) · ArcGIS Pro · ReGrid · USDA SSURGO · USDA NLCD · REST APIs
 
 **Problem:** Identifying which farm parcels qualify for USDA NRCS ACEP (Agricultural Conservation Easement Program) grants requires cross-referencing soil classification and land cover data against program eligibility thresholds: a process that previously required manual Web Soil Survey queries county by county, taking 20+ analyst hours per screening run.
 
@@ -127,6 +129,8 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 **MS Capstone Project · CAS EE 644 · Boston University · Spring 2025**
 
 **Tools:** Google Earth Engine · Landsat 5 / Landsat 8 · Random Forest · CAL FIRE FHSZ · ArcGIS Pro
+
+**Key Finding:** 16,643 hectares of new development were detected within LA County's very high fire hazard zones between 2007 and 2024 -- the majority of it predating the hazard designations meant to restrict it, exposing a structural gap between land cover change and regulatory response.
 
 **Context:** In early 2025, CAL FIRE released the first comprehensive update to its Local Responsibility Area (LRA) Fire Hazard Severity Zone (FHSZ) maps since 2011, a roughly 14-year gap during which wildfire frequency and severity rose dramatically. The 2025 Eaton Fire and the 2017 Tubbs Fire both occurred in areas the 2007 maps underestimated. This project was designed to characterize what land cover change actually happened inside those very high hazard zones during the years the maps went unchanged.
 
@@ -187,15 +191,6 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 </div>
 
 <!-- TODO: Add RF model depth to fire hazard project - feature importance, hyperparameter tuning, class-weighted training rationale given 9-class imbalance. Shows model understanding, not just model execution. -->
-
----
-
-## Multispectral Transform Analysis, Los Angeles {#multispectral}
-
-**Tools:** ENVI · Multispectral Imagery · Band Math
-
-**Overview:**
-Applied spectral transformations to Los Angeles satellite data to extract landscape patterns not visible in natural color imagery. Techniques included principal component analysis and tasseled cap transformation to isolate vegetation, soil, and built-up surface signatures.
 
 <div class="lightbox-overlay" id="lightbox">
   <button class="lightbox-close" id="lightbox-close">&#10005;</button>

@@ -4,7 +4,7 @@ author_profile: true
 title: "Al Hotimski"
 excerpt: "Geospatial Data Scientist"
 ---
-I build data systems and analytical models that make sense of the landscape: land ownership, urban growth, fire risk, and conservation opportunity. Currently a Geospatial Data Scientist at **The Conservation Fund**, where I design geospatial pipelines and machine learning workflows that support land acquisition and stewardship decisions.
+Geospatial Data Scientist with an MS in Remote Sensing and Geospatial Sciences (Environmental Data Science). I design end-to-end data pipelines and machine learning systems for land ownership tracking, fire risk modeling, and conservation planning. At The Conservation Fund, I have built tools that cut analysis time from 20+ hours to 10 minutes and reduced manual QA workloads by 93%.
 
 ---
 
@@ -28,7 +28,7 @@ I build data systems and analytical models that make sense of the landscape: lan
       <div class="archive__item-body">
         <h2 class="archive__item-title">Machine Learning</h2>
         <div class="archive__item-excerpt">
-          <p>Random Forest classifiers, fuzzy string matching, time-series analysis, and automated data pipelines built in Python (pandas, NumPy, scikit-learn).</p>
+          <p>Supervised classification, time-series change detection, entity resolution, and natural language processing (NLTK) applied to spatial and environmental data using scikit-learn, pandas, and NumPy.</p>
         </div>
       </div>
     </div>
@@ -37,9 +37,9 @@ I build data systems and analytical models that make sense of the landscape: lan
 <div class="feature__item">
     <div class="archive__item">
       <div class="archive__item-body">
-        <h2 class="archive__item-title">Conservation Tech</h2>
+        <h2 class="archive__item-title">Land Data Systems</h2>
         <div class="archive__item-excerpt">
-          <p>End-to-end systems for land management, from USDA grant eligibility screening to land ownership tracking, built for real decision-making.</p>
+          <p>End-to-end ETL pipelines, relational databases, and ArcGIS-integrated tooling that put geospatial intelligence directly into conservation decisions: USDA grant screening, ownership tracking, and spatial project management.</p>
         </div>
       </div>
     </div>
@@ -49,13 +49,13 @@ I build data systems and analytical models that make sense of the landscape: lan
 
 ---
 
-## Selected Projects
+## Projects
 
 ### [Land Ownership and Boundary Change Detection](/projects/#land-ownership)
 
 An automated pipeline that resolves LLC ownership structures in county parcel records and detects ownership and boundary changes between time-stamped snapshots using spatial overlay analysis and symmetric difference.
 **93% reduction in manual QA review. Longitudinal ownership intelligence across the Southeast U.S.**
-`Python` `Fuzzy Matching` `Relational DB` `Spatial Overlay` `ReGrid`
+`Python` `SQL` `Data Harmonization` `Relational DB` `Spatial Overlay` `ReGrid`
 
 ---
 
@@ -69,7 +69,7 @@ Automated USDA NRCS ACEP easement grant screening by applying SSURGO and NLCD ra
 
 ### [Urban Growth in Fire Hazard Zones](/projects/#fire-hazard)
 
-Two-decade land cover classification modeling urban expansion within fire hazard severity zones in LA County using Google Earth Engine.
+Seventeen years of Landsat imagery reveal that 16,643 ha of new development in LA County's very high fire hazard zones largely predates the hazard designations meant to restrict it, exposing a structural gap in planning and insurance policy.
 `GEE` `Random Forest` `Landsat` `Remote Sensing`
 
 ---
@@ -79,7 +79,7 @@ Two-decade land cover classification modeling urban expansion within fire hazard
 | Domain | Tools |
 | --- | --- |
 | Languages | Python, R, SQL, JavaScript, Bash |
-| ML & Analysis | scikit-learn, Random Forest, fuzzy matching, record linkage, time-series, change detection |
-| Data Engineering | pandas, NumPy, relational databases, automated pipelines, Git |
-| GIS & Remote Sensing | ArcGIS Pro, QGIS, Google Earth Engine, Landsat, land cover classification |
+| ML & Analysis | scikit-learn, NLTK, supervised classification, NLP, data harmonization, time-series, change detection |
+| Data Engineering | pandas, NumPy, relational databases, ETL pipelines, Git |
+| GIS & Remote Sensing | ArcGIS Pro, QGIS, Google Earth Engine (cloud-native), geopandas, shapely, rasterio, Landsat |
 | Visualization | Power BI, ArcGIS Online, matplotlib |
