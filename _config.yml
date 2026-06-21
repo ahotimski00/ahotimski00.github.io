@@ -1,5 +1,39 @@
-# logo: assets/img/icon_ah_circle.png
-title: Al Hotimski
-description: Applied Data Scientist & Geospatial Analyst
-# show_downloads: true
-theme: jekyll-theme-minimal
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+title: "Al Hotimski"
+name: "Al Hotimski"
+description: "Geospatial Data Scientist | Conservation & Climate"
+url: "https://ahotimski00.github.io"
+repository: "ahotimski00/ahotimski00.github.io"
+
+author:
+  name: "Al Hotimski"
+  avatar: "/assets/img/icon_ah_circle.png"
+  bio: "Geospatial Data Scientist at The Conservation Fund. MS in Remote Sensing & Geospatial Sciences."
+  location: "New York City Area"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ahotimski00"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/al-hotimski/"
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true

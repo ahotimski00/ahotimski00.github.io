@@ -1,0 +1,429 @@
+---
+---
+
+@charset "utf-8";
+
+// ── Color palette from Google Sites portfolio ─────────────────────
+$dark:          #1c1c1c;   // near-black (nav bg, headings)
+$cream:         #f2efed;   // warm off-white (page bg)
+$light:         #f9f9f9;   // near-white (text on dark)
+$purple:        #8e7cc3;   // accent / links
+$purple-hover:  #7a69b0;
+
+// ── Override minimal-mistakes Sass variables before importing ─────
+$background-color:          $cream          !default;
+$text-color:                $dark           !default;
+$primary-color:             $purple         !default;
+$link-color:                $purple         !default;
+$link-color-hover:          $purple-hover   !default;
+$link-color-visited:        $purple         !default;
+$masthead-link-color:       $light          !default;
+$masthead-link-color-hover: rgba(249,249,249,0.82) !default;
+$navicon-link-color-hover:  rgba(249,249,249,0.82) !default;
+
+// ── Font stack ────────────────────────────────────────────────────
+$sans-serif:        "Roboto", -apple-system, sans-serif   !default;
+$monospace:         "Source Code Pro", "Courier New", monospace !default;
+$global-font-size:  16px    !default;
+$global-line-height: 1.6    !default;
+
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+// ── Masthead (top nav bar) ────────────────────────────────────────
+.greedy-nav {
+  background: $dark !important;
+}
+
+.masthead {
+  background-color: $dark;
+  border-bottom: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+
+  .site-title,
+  .masthead__menu-item a,
+  .greedy-nav a {
+    color: $light;
+    font-family: $sans-serif;
+    font-weight: 400;
+  }
+
+  .site-title:hover,
+  .masthead__menu-item a:hover,
+  .greedy-nav a:hover {
+    color: rgba(249,249,249,0.82);
+  }
+
+  .greedy-nav__toggle {
+    color: $light;
+  }
+
+}
+
+// Nav dropdown must be outside .masthead for specificity
+.greedy-nav .hidden-links {
+  background-color: $dark !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+  li a {
+    color: $light !important;
+    &:hover { color: rgba(249,249,249,0.82) !important; }
+  }
+}
+
+// ── Page background and body ──────────────────────────────────────
+body {
+  background-color: $cream;
+  color: $dark;
+  font-family: $sans-serif;
+  font-weight: 300;
+}
+
+.page__content,
+.archive,
+.sidebar {
+  background-color: $cream;
+}
+
+// ── Author sidebar ────────────────────────────────────────────────
+.sidebar .author__name {
+  color: $dark;
+  font-weight: 500;
+}
+
+.sidebar .author__bio {
+  color: rgba(28,28,28,0.75);
+}
+
+.sidebar .author__urls a {
+  color: $purple;
+  &:hover { color: $purple-hover; }
+}
+
+// Remove white padding ring from circular avatar
+.author__avatar img {
+  padding: 0 !important;
+  border: none !important;
+}
+
+// Remove sidebar fade-in effect - always fully visible
+@media (min-width: 64em) {
+  .sidebar {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+// Taller banner, focal point shifted down to show coast/ocean
+.page__hero--overlay {
+  background-position: center 72% !important;
+  padding: 6em 0 !important;
+  text-align: center;
+
+  .page__title,
+  .page__lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ── Headings ──────────────────────────────────────────────────────
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-serif;
+  font-weight: 500;
+  color: $dark;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-weight: 400; font-size: 2rem; }
+h2 { font-size: 1.5rem; border-bottom: 1px solid rgba(28,28,28,0.12); padding-bottom: 0.4rem; }
+
+// ── Links ─────────────────────────────────────────────────────────
+a {
+  color: $purple;
+  &:hover { color: $purple-hover; }
+  &:visited { color: $purple; }
+}
+
+// ── Page hero / intro text ────────────────────────────────────────
+.page__title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: $dark;
+}
+
+// ── Feature row boxes (home page) ────────────────────────────────
+.feature__wrapper {
+  .archive__item-title {
+    color: $dark;
+    font-weight: 500;
+  }
+}
+
+// ── Skills table ──────────────────────────────────────────────────
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: rgba(255,255,255,0.6);
+  border-radius: 4px;
+  overflow: hidden;
+
+  th {
+    background-color: $dark;
+    color: $light;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+  }
+
+  td {
+    padding: 0.55rem 1rem;
+    border-bottom: 1px solid rgba(28,28,28,0.08);
+    color: $dark;
+  }
+
+  tr:last-child td { border-bottom: none; }
+  tr:nth-child(even) td { background: rgba(142,124,195,0.06); }
+}
+
+// ── Horizontal rules ─────────────────────────────────────────────
+hr {
+  border: none;
+  border-top: 1px solid rgba(28,28,28,0.12);
+  margin: 2rem 0;
+}
+
+// ── Code blocks ──────────────────────────────────────────────────
+code {
+  background: rgba(142,124,195,0.12);
+  color: darken($purple, 10%);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  font-family: $monospace;
+  font-size: 0.88em;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.highlight {
+  background: $dark;
+  border-radius: 6px;
+
+  pre { color: $light; }
+}
+
+// ── TOC (table of contents) ──────────────────────────────────────
+.toc {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(28,28,28,0.1);
+  border-radius: 4px;
+
+  .nav__title {
+    background-color: $dark;
+    color: $light;
+    font-weight: 500;
+    border-radius: 3px 3px 0 0;
+  }
+
+  a {
+    color: $purple;
+    &:hover { color: $purple-hover; }
+  }
+}
+
+// ── Buttons ───────────────────────────────────────────────────────
+.btn--primary {
+  background-color: $purple;
+  border-color: $purple;
+  color: $light;
+
+  &:hover {
+    background-color: $purple-hover;
+    border-color: $purple-hover;
+    color: $light;
+  }
+}
+
+// ── Footer ────────────────────────────────────────────────────────
+.page__footer {
+  background-color: $dark;
+  color: rgba(249,249,249,0.6);
+
+  a { color: rgba(249,249,249,0.75); }
+  a:hover { color: $light; }
+}
+
+.page__footer-copyright {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+// Hide Recent Posts section (no blog posts on this site)
+.archive__subtitle,
+.entries-list {
+  display: none;
+}
+
+// ── Two-column image grid ─────────────────────────────────────────
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  align-items: start;
+
+  // Reset minimal-mistakes figure overrides so grid alignment is clean
+  figure {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  figcaption {
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+    color: rgba(28,28,28,0.6);
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── Lightbox ──────────────────────────────────────────────────────
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+
+  &.active { display: flex; }
+
+  .lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    font-size: 2rem;
+    color: rgba(255,255,255,0.75);
+    cursor: pointer;
+    line-height: 1;
+    background: none;
+    border: none;
+    padding: 0;
+    z-index: 1;
+    &:hover { color: #fff; }
+  }
+}
+
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 88vw;
+
+  img {
+    max-width: 100%;
+    max-height: 82vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    cursor: default;
+    display: block;
+  }
+}
+
+.lightbox-caption {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.88rem;
+  margin-top: 0.75rem;
+  text-align: center;
+  font-style: italic;
+  max-width: 72ch;
+  line-height: 1.4;
+}
+
+.lightbox-nav {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0 1.25rem;
+  flex-shrink: 0;
+  user-select: none;
+  &:hover { color: #fff; }
+}
+
+// Make all content images signal clickability
+.page__content img,
+.carousel img {
+  cursor: zoom-in;
+}
+
+// ── Carousel component ────────────────────────────────────────────
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  background: rgba(255,255,255,0.5);
+  border-radius: 6px;
+  padding: 0.5rem 0;
+}
+
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel figure {
+  margin: 0;
+  padding: 0.75rem;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.carousel figcaption {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: rgba(28,28,28,0.6);
+  font-style: italic;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 0.75rem;
+  color: $purple;
+  flex-shrink: 0;
+
+  &:hover { color: $purple-hover; }
+}
