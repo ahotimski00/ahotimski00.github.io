@@ -3,10 +3,6 @@ layout: home
 author_profile: true
 title: "Al Hotimski"
 excerpt: "Geospatial Data Scientist"
-header:
-  overlay_image: /assets/img/ms_tca_banner.jpg
-  overlay_filter: 0.45
-  overlay_color: "#1c1c1c"
 ---
 I build data systems and analytical models that make sense of the landscape: land ownership, urban growth, fire risk, and conservation opportunity. Currently a Geospatial Data Scientist at **The Conservation Fund**, where I design geospatial pipelines and machine learning workflows that support land acquisition and stewardship decisions.
 
