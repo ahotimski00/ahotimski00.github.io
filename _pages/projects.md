@@ -17,7 +17,7 @@ toc_icon: "map"
 **Tools:** Python (arcpy) · ArcGIS Pro · Relational Database · ReGrid · Data Harmonization
 
 **Outcomes:**
-- **93% reduction** in manual QA review effort (from ~2 weeks to under a day)
+- **93% reduction** in per-state-per-month QA review effort (from ~2 analyst-weeks down to under a day, on the recurring monthly Regrid refresh that drives the pipeline)
 - Enabled analysis and outreach at the parent-company level rather than the shell LLC level
 - Produced a versioned, longitudinal record of ownership and parcel geometry changes across the Southeast U.S.
 
@@ -90,6 +90,8 @@ A structured geodatabase pipeline that processes raw parcel data (ReGrid) into a
 ## ACEP Easement Eligibility Screening Tool {#farm-parcel}
 
 **Tools:** Python (arcpy) · ArcGIS Pro · ReGrid · USDA SSURGO · USDA NLCD · REST APIs
+
+*Source code is internal to The Conservation Fund. The pipeline architecture, the `WorkingFarmsFund.pyt` toolbox structure, the sequential SSURGO and NLCD raster filters, and the checkpoint/resume design are described in detail below. Sanitized screenshots and a workflow diagram are included. Walkthrough or code review available on request.*
 
 **Problem:** Identifying which farm parcels qualify for USDA NRCS ACEP (Agricultural Conservation Easement Program) grants requires cross-referencing soil classification and land cover data against program eligibility thresholds: a process that previously required manual Web Soil Survey queries county by county, taking 20+ analyst hours per screening run.
 
