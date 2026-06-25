@@ -45,7 +45,7 @@ Python · R · JavaScript · SQL · Bash · Git · Linux
 ArcGIS Pro · ArcGIS Online · QGIS · Google Earth Engine (cloud-native) · geopandas · shapely · rasterio · ENVI
 
 **Machine Learning**
-scikit-learn · NLTK · classification · regression · NLP · data harmonization · time-series · change detection
+scikit-learn · supervised classification · fuzzy matching · data harmonization · entity resolution · time-series · change detection (CCDC)
 
 **Data Engineering**
 pandas · NumPy · ETL pipelines · relational databases · REST APIs

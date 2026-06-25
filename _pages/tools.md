@@ -7,12 +7,11 @@ toc: true
 toc_label: "Tools"
 toc_icon: "wrench"
 ---
-
 Open-source libraries and interactive demos that stand on their own outside the longer case studies on the [Projects](/projects/) page.
 
 ---
 
-## cogsieve {#cogsieve}
+## cogsieve
 
 **A Python library that filters polygons by fractional class coverage of categorical rasters, reading windowed pixels directly from remote Cloud-Optimized GeoTIFFs instead of downloading scenes.** Three concrete use cases (solar siting, tree equity, wildfire risk) demonstrated on public data.
 
@@ -27,6 +26,7 @@ Open-source libraries and interactive demos that stand on their own outside the 
 **What it does:** Given a GeoDataFrame of polygons and a categorical raster (NLCD-style land cover, slope class, burn severity, etc.), compute the exact fractional pixel coverage per class per polygon, then filter polygons by a per-class threshold. Chain multiple screens to build a funnel. One declarative `CoverageScreen` dataclass carries the configuration for a stage, and the same primitive serves different domain questions just by changing the class codes and thresholds.
 
 **Why it is fast:** Three design choices stack:
+
 - **Exact fractional coverage** via `exactextract` (C++), instead of the standard rasterize-then-intersect workflow that produces edge artifacts and intermediate vector data.
 - **COG windowed reads over HTTP** via rasterio's `/vsicurl/` driver: screens against a 30 GB CONUS LCMAP raster fetch only the tiles intersecting each parcel's bounding box, no scene download.
 - **Funnel pipeline with content-addressed caching:** the second screen only sees parcels that survived the first, and per-stage GeoParquet caches make re-runs essentially free.
@@ -34,11 +34,12 @@ Open-source libraries and interactive demos that stand on their own outside the 
 A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildable + 3DEP-derived slope) runs end-to-end in 12 seconds.
 
 **Three demo domains, all on public data:**
+
 - **Solar siting** (San Diego County): buildable land cover + low slope → 113 utility-scale candidates from 25,000 parcels.
 - **Tree equity** (LA County): low canopy + urban context → 6,213 priority planting block groups from 6,591.
 - **Wildfire WUI** (San Diego County): MTBS burn-severity touch → 45 parcels in the 2007 Witch Fire perimeter.
 
-**Approach: decisions I made building this**
+**Approach:** 
 
 *Use exact fractional pixel coverage instead of rasterize-then-intersect.* The textbook zonal-stats workflow vectorizes the raster, intersects with input polygons, then sums area per fragment. It introduces edge artifacts at polygon boundaries (a pixel half-inside the polygon either gets counted entirely or discarded) and produces large intermediate vector tables. `exactextract` computes each pixel's exact fractional intersection analytically in C++. Cleaner numbers, less code, and faster.
 

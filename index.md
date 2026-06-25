@@ -39,7 +39,7 @@ Geospatial Data Scientist at **The Conservation Fund** with an MS in Remote Sens
       <div class="archive__item-body">
         <h2 class="archive__item-title">Conservation Tech</h2>
         <div class="archive__item-excerpt">
-          <p>End-to-end systems for land management: USDA grant screening, ownership tracking, and Salesforce-to-ArcGIS workflows built to put spatial intelligence in the hands of people making real decisions.</p>
+          <p>USDA NRCS ACEP grant screening: 20+ hours of analyst work down to 10 minutes. LLC-resolved parcel ownership and boundary change tracking across Southeast U.S. timberland. Salesforce-to-ArcGIS Online sync for project intake.</p>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@ Seventeen years of Landsat imagery reveal that 16,643 ha of new development in L
 | Domain | Tools |
 | --- | --- |
 | Languages | Python, R, SQL, JavaScript, Bash |
-| ML & Analysis | scikit-learn, NLTK, supervised classification, NLP, data harmonization, time-series, change detection |
+| ML & Analysis | scikit-learn, supervised classification, fuzzy matching, data harmonization, entity resolution, time-series, change detection (CCDC) |
 | Data Engineering | pandas, NumPy, relational databases, ETL pipelines, Git |
 | GIS & Remote Sensing | ArcGIS Pro, QGIS, Google Earth Engine (cloud-native), geopandas, shapely, rasterio, Landsat |
 | Visualization | Power BI, ArcGIS Online, matplotlib |
