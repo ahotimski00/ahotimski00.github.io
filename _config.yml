@@ -37,3 +37,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+      related: false
+      show_date: true
+
+permalink: /writing/:title/
