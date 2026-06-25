@@ -18,6 +18,8 @@ Open-source libraries and interactive demos that stand on their own outside the 
 
 **Live demo:** [cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app](https://cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app/) - move two sliders, watch 25,000 San Diego County parcels re-filter in milliseconds.
 
+[![cogsieve interactive solar-siting demo, San Diego County: threshold sliders, funnel stats, suitable parcels on a map](/assets/img/cogsieve_streamlit.png)](https://cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app/)
+
 **Repository:** [github.com/ahotimski00/cogsieve](https://github.com/ahotimski00/cogsieve)
 
 **Stack:** Python · rasterio · geopandas · exactextract · pystac-client · Planetary Computer · Streamlit · pytest · GitHub Actions
