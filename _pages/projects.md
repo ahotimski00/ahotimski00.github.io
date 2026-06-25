@@ -132,7 +132,7 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 
 **Tools:** Google Earth Engine · Landsat 5 / Landsat 8 · Random Forest · CAL FIRE FHSZ · ArcGIS Pro
 
-**Key Finding:** 16,643 hectares of new development were detected within LA County's very high fire hazard zones between 2007 and 2024 -- the majority of it predating the hazard designations meant to restrict it, exposing a structural gap between land cover change and regulatory response.
+**Key Finding:** 16,643 hectares of new development were detected within LA County's very high fire hazard zones between 2007 and 2024. The majority of it predates the hazard designations meant to restrict it, exposing a structural gap between land cover change and regulatory response.
 
 **Context:** In early 2025, CAL FIRE released the first comprehensive update to its Local Responsibility Area (LRA) Fire Hazard Severity Zone (FHSZ) maps since 2011, a roughly 14-year gap during which wildfire frequency and severity rose dramatically. The 2025 Eaton Fire and the 2017 Tubbs Fire both occurred in areas the 2007 maps underestimated. This project was designed to characterize what land cover change actually happened inside those very high hazard zones during the years the maps went unchanged.
 

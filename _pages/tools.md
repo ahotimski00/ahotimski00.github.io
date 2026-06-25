@@ -31,7 +31,7 @@ Open-source libraries and interactive demos that stand on their own outside the 
 - **COG windowed reads over HTTP** via rasterio's `/vsicurl/` driver: screens against a 30 GB CONUS LCMAP raster fetch only the tiles intersecting each parcel's bounding box, no scene download.
 - **Funnel pipeline with content-addressed caching:** the second screen only sees parcels that survived the first, and per-stage GeoParquet caches make re-runs essentially free.
 
-A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildable + 3DEP-derived slope) runs end-to-end in 12 seconds. On the same single-screen LCMAP workload, cogsieve completes in 10.7 seconds; `rasterstats` (the standard pure-Python alternative) takes 320 seconds — **cogsieve is 30x faster**, measured back-to-back on the same machine against the same Planetary Computer COG.
+A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildable + 3DEP-derived slope) runs end-to-end in 12 seconds. On the same single-screen LCMAP workload, cogsieve completes in 10.7 seconds; `rasterstats` (the standard pure-Python alternative) takes 320 seconds. **cogsieve is 30x faster**, measured back-to-back on the same machine against the same Planetary Computer COG.
 
 **Three demo domains, all on public data:**
 

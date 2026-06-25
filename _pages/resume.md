@@ -4,8 +4,8 @@ title: "Resume"
 permalink: /resume/
 author_profile: true
 ---
-
 <!-- TODO: Upload al_hotimski_resume.pdf to assets/ then uncomment the line below -->
+
 <!-- [Download PDF Resume](/assets/al_hotimski_resume.pdf){: .btn .btn--primary} -->
 
 ---
@@ -37,7 +37,7 @@ Coursework: Advanced GIS, Remote Sensing, Data Structures, Python Programming, S
 
 - Led GIS analysis for a public-sector client assessing Urban Heat Island exposure across Boston Housing Authority properties
 - Integrated spatial datasets (land cover, surface temperature, exposure metrics) to identify high-risk locations; developed ArcGIS Online web maps and visual summaries for non-technical stakeholders
-- Gathered requirements from BHA staff, scoped deliverables, and presented findings directly to BHA staff translating spatial analysis into actionable planning insights
+- Gathered requirements from BHA staff, scoped deliverables, and presented findings directly to BHA staff, translating spatial analysis into planning recommendations they could act on
 
 ### Environmental Data Science Internship, TRC Companies, Inc. *(May-Aug 2024)*
 
