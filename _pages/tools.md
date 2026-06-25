@@ -16,7 +16,7 @@ Open-source libraries and interactive demos that stand on their own outside the 
 
 **A Python library that filters polygons by fractional class coverage of categorical rasters, reading windowed pixels directly from remote Cloud-Optimized GeoTIFFs instead of downloading scenes.** Three concrete use cases (solar siting, tree equity, wildfire risk) demonstrated on public data.
 
-**Live demo:** [cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app](https://cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app/) - move two sliders, watch 25,000 San Diego County parcels re-filter in milliseconds.
+**Live demo:** [cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app](https://cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app/) - three tabs (solar siting, tree equity, wildfire WUI), each with threshold sliders that re-filter cached coverage fractions in milliseconds.
 
 [![cogsieve interactive solar-siting demo, San Diego County: threshold sliders, funnel stats, suitable parcels on a map](/assets/img/cogsieve_streamlit.png)](https://cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app/)
 
