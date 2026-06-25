@@ -17,7 +17,7 @@ Geospatial Data Scientist at **The Conservation Fund** with an MS in Remote Sens
       <div class="archive__item-body">
         <h2 class="archive__item-title">Geospatial Analysis</h2>
         <div class="archive__item-excerpt">
-          <p>Land cover classification, change detection, satellite imagery analysis, and spatial data modeling using ArcGIS, QGIS, and Google Earth Engine.</p>
+          <p>Land cover classification, change detection, and spatial data modeling. ArcGIS Pro, QGIS, Google Earth Engine, geopandas, rasterio. Recent: 20 years of Landsat across LA County's fire hazard zones.</p>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@ Geospatial Data Scientist at **The Conservation Fund** with an MS in Remote Sens
       <div class="archive__item-body">
         <h2 class="archive__item-title">Machine Learning</h2>
         <div class="archive__item-excerpt">
-          <p>Supervised classification, time-series change detection, entity resolution, and natural language processing (NLTK) applied to spatial and environmental data using scikit-learn, pandas, and NumPy.</p>
+          <p>Supervised classification, time-series change detection (CCDC), and fuzzy entity resolution applied to spatial and environmental data. scikit-learn, pandas, geopandas.</p>
         </div>
       </div>
     </div>
