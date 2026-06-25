@@ -4,9 +4,9 @@ title: "Resume"
 permalink: /resume/
 author_profile: true
 ---
-<!-- TODO: Upload al_hotimski_resume.pdf to assets/ then uncomment the line below -->
+**Geospatial Data Scientist** &nbsp;|&nbsp; <a href="mailto:a.hotimski@gmail.com">a.hotimski@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/al-hotimski/">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/ahotimski00">GitHub</a>
 
-<!-- [Download PDF Resume](/assets/al_hotimski_resume.pdf){: .btn .btn--primary} -->
+[Download PDF Resume](/assets/al_hotimski_resume.pdf){: .btn .btn--primary}
 
 ---
 
