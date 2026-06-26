@@ -39,7 +39,7 @@ Geospatial Data Scientist at **The Conservation Fund** with an MS in Remote Sens
       <div class="archive__item-body">
         <h2 class="archive__item-title">Conservation Tech</h2>
         <div class="archive__item-excerpt">
-          <p>USDA NRCS ACEP grant screening: 20+ hours of analyst work down to 10 minutes. LLC-resolved parcel ownership and boundary change tracking across Southeast U.S. timberland. Salesforce-to-ArcGIS Online sync for project intake.</p>
+          <p>End-to-end pipelines for land trusts and conservation orgs. USDA NRCS ACEP grant screening that replaces manual Web Soil Survey queries with one regional run. LLC-resolved parcel ownership and boundary change tracking across Southeast U.S. timberland.</p>
         </div>
       </div>
     </div>
