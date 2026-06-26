@@ -32,24 +32,6 @@ Coursework: Advanced GIS, Remote Sensing, Data Structures, Python Programming, S
 
 - QA/QC and accuracy assessment across 800+ georeferenced locations spanning 25 years of land cover change
 
-[Read more on Resume page →](/resume/)
-
----
-
-## Technical Skills
-
-**Programming & Data**
-Python · R · JavaScript · SQL · Bash · Git · Linux
-
-**GIS & Remote Sensing**
-ArcGIS Pro · ArcGIS Online · QGIS · Google Earth Engine (cloud-native) · geopandas · shapely · rasterio · ENVI
-
-**Machine Learning**
-scikit-learn · supervised classification · fuzzy matching · record linkage · entity resolution · data harmonization · time-series · change detection (CCDC)
-
-**Data Engineering**
-pandas · NumPy · ETL pipelines · relational databases · REST APIs
-
 ---
 
 ## Volunteer Work
