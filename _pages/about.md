@@ -5,9 +5,9 @@ permalink: /about/
 author_profile: true
 ---
 
-I am an applied data scientist with an MS in Remote Sensing and Geospatial Sciences (Environmental Data Science) and a background in geospatial analytics, land-use modeling, and environmental data systems. My work focuses on using data science and machine learning to solve real-world problems involving complex ownership structures, spatial change over time, and climate-related risk.
+My work focuses on crafting data systems for complex ownership structures, spatial change over time, climate-related risk. Better data leads to better decisions for the landscapes and communities those decisions affect.
 
-I'm driven by the belief that better data, collected rigorously, analyzed carefully, and communicated clearly, leads to better decisions for landscapes and the communities that depend on them.
+Outside of work I enjoy painting with watercolors, reading, and teaching friends to play pickleball.
 
 ---
 
