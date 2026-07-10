@@ -168,7 +168,7 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 
 ![Per-class accuracy with 95% confidence intervals](/assets/img/fhsz_per_class_accuracy.png)
 
-**Key Takeaway:** Communities now living in very high fire hazard zones were largely developed before the hazard designation existed or was enforced. That lag between land cover change and official hazard zoning is a structural gap in municipal planning and insurance regulation that map updates alone cannot resolve, and it holds regardless of the exact area, which is why the honest number to report is a bias-adjusted estimate with its uncertainty rather than a raw pixel count.
+**Key Takeaway:** Communities now living in very high fire hazard zones were largely developed before the hazard designation existed or was enforced. That lag between land cover change and official hazard zoning is a structural gap in municipal planning and insurance regulation.
 
 *Map history: LA County's LRA Very High FHSZ maps were released in draft/recommended form in 2007-2008 and formally issued in 2011; the 2025 revision is the first comprehensive update since. The earlier boundary in this study is the 2007 draft/recommended layer. Source: [CAL FIRE Office of the State Fire Marshal](https://osfm.fire.ca.gov/what-we-do/community-wildfire-preparedness-and-mitigation/fire-hazard-severity-zones).*
 
