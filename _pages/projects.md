@@ -128,7 +128,7 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 
 **Tools:** Google Earth Engine · Landsat 5 / Landsat 8 · Random Forest · CAL FIRE FHSZ · ArcGIS Pro
 
-**Key Finding:** 16,643 hectares of new development were detected within LA County's very high fire hazard zones between 2007 and 2024. The majority of it predates the hazard designations meant to restrict it, exposing a structural gap between land cover change and regulatory response.
+**Key Finding:** New development expanded into LA County's very high fire hazard zones during the 14 years the maps went unrevised, and much of it predates the hazard designation meant to restrict it. The classification maps roughly 16,600 ha of new development; a formal accuracy assessment (below) corrects that to about 5,700 ha with wide uncertainty. The direction of the finding is clear, the magnitude is not, and separating the two is the point.
 
 **Context:** In early 2025, CAL FIRE released the first comprehensive update to its Local Responsibility Area (LRA) Fire Hazard Severity Zone (FHSZ) maps since 2011, a roughly 14-year gap during which wildfire frequency and severity rose dramatically. The 2025 Eaton Fire and the 2017 Tubbs Fire both occurred in areas the prior maps underestimated. This project was designed to characterize what land cover change actually happened inside those very high hazard zones during the years the maps went unchanged.
 
@@ -156,14 +156,19 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 
 **Key Findings:**
 
-- **16,643 hectares** of new development detected within the very high FHSZ study area (area SE: 2,718 ha)
-- Largest new development class: **Bare to Developed** (12,038 ha), predominantly neighborhood construction approved before the 2011 FHSZ maps were enacted
-- **Herbaceous to Developed** was the second largest conversion class, capturing construction across the 2007-2024 window and, near Lancaster, large-scale solar panel infrastructure installation
-- Stable Developed totaled **43,907 hectares**, with the highest joint Producer's and User's accuracy of any class
-- The 2025 FHSZ update expanded very high zones significantly around Santa Clarita, where new neighborhood development was also highest, illustrating how development and hazard designation have tracked together
-- Rolling Hills (southern LA County) showed the largest FHSZ loss between maps: the 2025 update reclassified its established developed areas downward, likely to high rather than zero hazard
+- The map flags ~16,600 ha of new development across the three conversion classes, but that is a raw mapped area. The accuracy assessment below adjusts it to ~5,700 ha, with wide uncertainty.
+- The largest raw conversion class, **Bare to Developed** (~12,000 ha mapped), carries a user's accuracy of only 0.12, so most of that area is commission error; its accuracy-adjusted estimate is closer to ~2,000 ha.
+- New development, wherever it landed, concentrated around **Santa Clarita**, exactly where the 2025 FHSZ update expanded the very high zones: development and hazard designation have tracked together.
+- **Rolling Hills** (southern LA County) showed the largest FHSZ loss between maps, where the 2025 update reclassified established developed areas downward.
+- The stable classes classified reliably (Stable Developed, Stable Herbaceous, and Stable Tree all with strong accuracy); the weakness is concentrated in the rare development-conversion classes.
 
-**Key Takeaway:** Communities now living in very high fire hazard zones were largely developed before the hazard designation existed or was enforced. The lag between land cover change and official hazard zoning creates a structural gap in municipal planning and insurance regulation that cannot be resolved by map updates alone.
+**Accuracy assessment, reproduced and stress-tested.** I rebuilt the assessment from the 317 map and reference points and applied Olofsson et al. (2014) good-practice estimation. Full code and results are in a separate repo: [github.com/ahotimski00/fhsz-accuracy-assessment](https://github.com/ahotimski00/fhsz-accuracy-assessment). Area-adjusted overall accuracy is **67% (± 5%)**. Two things the assessment makes explicit: the three development classes rest on only 3 to 30 reference points each, so their individual accuracies carry wide confidence intervals; and because Bare to Developed has low user's accuracy, the raw mapped area of new development (~16,600 ha) corrects to a design-based estimate near ~5,700 ha. A class-merge sensitivity test shows that collapsing the two spectrally-similar stable-vegetation classes raises overall accuracy to 79%, locating most of the remaining error in green-vegetation confusion rather than development detection.
+
+![Reproduced confusion matrix](/assets/img/fhsz_confusion_matrix.png)
+
+![Per-class accuracy with 95% confidence intervals](/assets/img/fhsz_per_class_accuracy.png)
+
+**Key Takeaway:** Communities now living in very high fire hazard zones were largely developed before the hazard designation existed or was enforced. That lag between land cover change and official hazard zoning is a structural gap in municipal planning and insurance regulation that map updates alone cannot resolve, and it holds regardless of the exact area, which is why the honest number to report is a bias-adjusted estimate with its uncertainty rather than a raw pixel count.
 
 *Map history: LA County's LRA Very High FHSZ maps were released in draft/recommended form in 2007-2008 and formally issued in 2011; the 2025 revision is the first comprehensive update since. The earlier boundary in this study is the 2007 draft/recommended layer. Source: [CAL FIRE Office of the State Fire Marshal](https://osfm.fire.ca.gov/what-we-do/community-wildfire-preparedness-and-mitigation/fire-hazard-severity-zones).*
 

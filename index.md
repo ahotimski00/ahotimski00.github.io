@@ -59,13 +59,6 @@ An open-source Python library that filters polygons by fractional class coverage
 
 ---
 
-### [Urban Growth in Fire Hazard Zones](/projects/#fire-hazard)
-
-Seventeen years of Landsat imagery reveal that 16,643 ha of new development in LA County's very high fire hazard zones largely predates the hazard designations meant to restrict it, exposing a structural gap in planning and insurance policy.
-`GEE` `Random Forest` `Landsat` `Remote Sensing`
-
----
-
 ### [Land Ownership and Boundary Change Detection](/projects/#land-ownership)
 
 An automated pipeline that resolves LLC ownership structures in county parcel records and detects ownership and boundary changes between time-stamped snapshots using spatial overlay analysis and symmetric difference.
@@ -79,6 +72,13 @@ An automated pipeline that resolves LLC ownership structures in county parcel re
 Automated USDA NRCS ACEP easement grant screening by applying SSURGO and NLCD raster criteria via REST services.
 **Analysis time: 20+ hours → 10 minutes. Projected $12,000/yr savings.**
 `Python` `ArcGIS Pro` `REST APIs` `SSURGO` `NLCD`
+
+---
+
+### [Urban Growth in Fire Hazard Zones](/projects/#fire-hazard)
+
+A 9-class Landsat change detection (2007-2024) paired with a full Olofsson accuracy assessment. New development expanded into LA County's very high fire hazard zones before the hazard designation caught up; the mapped extent corrects from ~16,600 ha to ~5,700 ha once bias-adjusted.
+`GEE` `Random Forest` `Landsat` `Accuracy Assessment`
 
 ---
 
