@@ -9,7 +9,7 @@ Most working GIS code runs about 30 times slower than it has to.
 
 I know because I measured it on my own workflow last week.
 
-I'm building a small open-source library called [cogsieve](https://github.com/ahotimski00/cogsieve) that filters polygons by fractional coverage of categorical rasters. Standard zonal-statistics work: given a set of parcels and a land-cover raster, tell me which parcels are mostly cropland, mostly forest, or mostly developed. The kind of question every working-GIS shop answers daily, every land trust uses for screening, every utility runs for siting analysis.
+I'm building a small open-source library called [cogsieve](https://github.com/ahotimski00/cogsieve) that filters polygons by fractional coverage of categorical rasters. Standard zonal-statistics work: given a set of parcels and a land-cover raster, tell me which parcels are mostly cropland, mostly forest, or mostly developed. The kind of screening land trusts and utilities run constantly.
 
 I wrote a fair benchmark against `rasterstats`, the standard pure-Python alternative, on 25,000 San Diego County parcels against the same USGS LCMAP raster hosted on Microsoft Planetary Computer. Same machine, back-to-back, single pass each:
 

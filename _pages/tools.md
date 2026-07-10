@@ -41,7 +41,7 @@ A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildabl
 
 **Approach:** 
 
-*Use exact fractional pixel coverage instead of rasterize-then-intersect.* The textbook zonal-stats workflow vectorizes the raster, intersects with input polygons, then sums area per fragment. It introduces edge artifacts at polygon boundaries (a pixel half-inside the polygon either gets counted entirely or discarded) and produces large intermediate vector tables. `exactextract` computes each pixel's exact fractional intersection analytically in C++. Cleaner numbers, less code, and faster.
+*Use exact fractional pixel coverage instead of rasterize-then-intersect.* The textbook zonal-stats workflow vectorizes the raster, intersects with input polygons, then sums area per fragment. It introduces edge artifacts at polygon boundaries (a pixel half-inside the polygon either gets counted entirely or discarded) and produces large intermediate vector tables. `exactextract` computes each pixel's exact fractional intersection analytically in C++. Cleaner numbers with less code.
 
 *Read remote rasters as Cloud-Optimized GeoTIFFs, do not download scenes.* The LCMAP and MTBS rasters used here are tens of gigabytes each, CONUS-wide. Naive workflows download the scene, clip locally, then analyze. cogsieve uses GDAL's `/vsicurl/` driver to issue HTTP range requests for only the tiles that intersect each polygon's bounding box. A state-wide screen pulls tens of megabytes over the wire, not gigabytes.
 
