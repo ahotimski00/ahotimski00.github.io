@@ -5,7 +5,7 @@ permalink: /writing/
 author_profile: true
 ---
 
-Notes on geospatial engineering, performance, and the gap between what's possible and what's standard practice.
+Half field notes, half opinions on maps, data, and geospatial workflows.
 
 ---
 
