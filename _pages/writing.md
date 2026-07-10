@@ -5,7 +5,7 @@ permalink: /writing/
 author_profile: true
 ---
 
-Occasional posts on geospatial engineering, performance, and the gap between what's possible and what's standard practice.
+Notes on geospatial engineering, performance, and the gap between what's possible and what's standard practice.
 
 ---
 

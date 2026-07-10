@@ -8,12 +8,8 @@ toc_label: "Projects"
 toc_icon: "map"
 ---
 
-<!-- TODO: Add SQL analytics layer section to this project - queries on LLC hierarchy DB answering: ownership concentration by company, parcel change velocity by geography, highest fragmentation rate counties. Document outputs, link queries as a GitHub gist or notebook. -->
-<!-- TODO: When farm parcel suitability repo is approved for public release, add GitHub link to the ACEP project section below. -->
 ## Land Ownership and Boundary Change Detection {#land-ownership}
 
-<!-- TODO: confirm and add Python libraries to Tools line: rapidfuzz, shapely, pandas, recordlinkage -->
-<!-- TODO: Home page ML blurb now says "natural language processing (NLTK)" - update this project's Tools line and description if NLTK is used here, or clarify where NLP fits vs fuzzy matching -->
 **Tools:** Python (arcpy) · ArcGIS Pro · Relational Database · ReGrid · Data Harmonization
 
 **Outcomes:**
@@ -134,7 +130,7 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 
 **Key Finding:** 16,643 hectares of new development were detected within LA County's very high fire hazard zones between 2007 and 2024. The majority of it predates the hazard designations meant to restrict it, exposing a structural gap between land cover change and regulatory response.
 
-**Context:** In early 2025, CAL FIRE released the first comprehensive update to its Local Responsibility Area (LRA) Fire Hazard Severity Zone (FHSZ) maps since 2011, a roughly 14-year gap during which wildfire frequency and severity rose dramatically. The 2025 Eaton Fire and the 2017 Tubbs Fire both occurred in areas the 2007 maps underestimated. This project was designed to characterize what land cover change actually happened inside those very high hazard zones during the years the maps went unchanged.
+**Context:** In early 2025, CAL FIRE released the first comprehensive update to its Local Responsibility Area (LRA) Fire Hazard Severity Zone (FHSZ) maps since 2011, a roughly 14-year gap during which wildfire frequency and severity rose dramatically. The 2025 Eaton Fire and the 2017 Tubbs Fire both occurred in areas the prior maps underestimated. This project was designed to characterize what land cover change actually happened inside those very high hazard zones during the years the maps went unchanged.
 
 **Study Area:** The union of the 2007 and 2025 CAL FIRE LRA "Very High" FHSZ boundaries in Los Angeles County (9.6 million residents, the most populous U.S. county). Total study area: **168,490 hectares**.
 
@@ -161,13 +157,15 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 **Key Findings:**
 
 - **16,643 hectares** of new development detected within the very high FHSZ study area (area SE: 2,718 ha)
-- Largest new development class: **Bare to Developed** (12,038 ha), predominantly neighborhood construction approved before the 2007 FHSZ maps were enacted
-- **Herbaceous to Developed** was the second largest conversion class, capturing post-2007 approved construction and, near Lancaster, large-scale solar panel infrastructure installation
+- Largest new development class: **Bare to Developed** (12,038 ha), predominantly neighborhood construction approved before the 2011 FHSZ maps were enacted
+- **Herbaceous to Developed** was the second largest conversion class, capturing construction across the 2007-2024 window and, near Lancaster, large-scale solar panel infrastructure installation
 - Stable Developed totaled **43,907 hectares**, with the highest joint Producer's and User's accuracy of any class
 - The 2025 FHSZ update expanded very high zones significantly around Santa Clarita, where new neighborhood development was also highest, illustrating how development and hazard designation have tracked together
 - Rolling Hills (southern LA County) showed the largest FHSZ loss between maps: the 2025 update reclassified its established developed areas downward, likely to high rather than zero hazard
 
 **Key Takeaway:** Communities now living in very high fire hazard zones were largely developed before the hazard designation existed or was enforced. The lag between land cover change and official hazard zoning creates a structural gap in municipal planning and insurance regulation that cannot be resolved by map updates alone.
+
+*Map history: LA County's LRA Very High FHSZ maps were released in draft/recommended form in 2007-2008 and formally issued in 2011; the 2025 revision is the first comprehensive update since. The earlier boundary in this study is the 2007 draft/recommended layer. Source: [CAL FIRE Office of the State Fire Marshal](https://osfm.fire.ca.gov/what-we-do/community-wildfire-preparedness-and-mitigation/fire-hazard-severity-zones).*
 
 <div class="carousel-wrapper">
   <button class="carousel-btn left" onclick="scrollCarousel('carousel2', -1)">&#10094;</button>
@@ -192,7 +190,6 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
   <button class="carousel-btn right" onclick="scrollCarousel('carousel2', 1)">&#10095;</button>
 </div>
 
-<!-- TODO: Add RF model depth to fire hazard project - feature importance, hyperparameter tuning, class-weighted training rationale given 9-class imbalance. Shows model understanding, not just model execution. -->
 
 <div class="lightbox-overlay" id="lightbox">
   <button class="lightbox-close" id="lightbox-close">&#10005;</button>
