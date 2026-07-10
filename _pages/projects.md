@@ -172,6 +172,8 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
 
 **Hazard is not risk: the 2025 Palisades fire.** This classification can see where and when development happened, but not whether a building can survive a fire. After the January 2025 Palisades fire, blocks inside the very high hazard zone burned while individual homes came through intact. Two neighbors make the point: a house built in 1951 survived while its neighbor built in 2006 burned. The older house had been updated with modern fire-resistant materials; the newer one was built to code but not hardened to the same standard. Owners can retrofit their own homes, but system-wide change usually waits on a top-down fire code, which is defined by the FHSZ map. The absence of a parcel-level risk layer (the kind property insurers now build) is keenly felt, as hazard layers are not updated frequently enough to capture a fast-changing environment.
 
+![Post-fire aerial of the Palisades burn zone, with boxes marking homes that survived amid destroyed blocks](/assets/img/fhsz_burn_context.png)
+
 ![Two neighboring homes in the Palisades burn zone: the 2006 build burned while the older 1951 build, updated with fire-resistant materials, survived](/assets/img/fhsz_home_comparison.png)
 
 *Map history: LA County's LRA Very High FHSZ maps were released in draft/recommended form in 2007-2008 and formally issued in 2011; the 2025 revision is the first comprehensive update since. The earlier boundary in this study is the 2007 draft/recommended layer. Source: [CAL FIRE Office of the State Fire Marshal](https://osfm.fire.ca.gov/what-we-do/community-wildfire-preparedness-and-mitigation/fire-hazard-severity-zones).*
@@ -190,10 +192,6 @@ Parcel input is flexible: the tool accepts a ReGrid REST feature service, a loca
     <figure>
       <img src="/assets/img/fhsz_classification_output.jpg" alt="Land cover change classification output map">
       <figcaption>Random Forest classification output showing land cover change classes across the 168,490 ha study area, 2007-2024.</figcaption>
-    </figure>
-    <figure>
-      <img src="/assets/img/fhsz_before_after.jpg" alt="Before and after development in fire hazard zones">
-      <figcaption>Development within Very High FHSZ boundaries: communities built into fire-prone terrain before modern hazard designations existed.</figcaption>
     </figure>
   </div>
   <button class="carousel-btn right" onclick="scrollCarousel('carousel2', 1)">&#10095;</button>
