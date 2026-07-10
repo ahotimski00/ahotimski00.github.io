@@ -5,7 +5,7 @@ permalink: /about/
 author_profile: true
 ---
 
-My work focuses on crafting data systems for complex ownership structures, spatial change over time, climate-related risk. Better data leads to better decisions for the landscapes and communities those decisions affect.
+My work focuses on crafting data systems for complex ownership structures, spatial change over time, climate-related risk.
 
 Outside of work I enjoy painting with watercolors, reading, and teaching friends to play pickleball.
 
@@ -52,4 +52,4 @@ My work emphasizes:
 - **Clear problem framing**: defining what question the data actually answers
 - **Transparency**: documenting assumptions and data limitations explicitly
 - **Scalability**: building systems that can be rerun and extended, not one-off analyses
-- **Domain knowledge**: treating subject-matter expertise as a core modeling input, not a footnote
+- **Domain knowledge**: treating subject-matter expertise as a core modeling input, so LLC-filing quirks shape the matching rules and soil-program thresholds shape the screens
