@@ -80,6 +80,10 @@ The merged-name counts are the point: Lyme Timber is recorded under 7 distinct L
 
 ![Largest private landowners in Hamilton County, NY after owner-name reconciliation; owners whose names were merged are highlighted](/assets/img/parcel_lineage_hamilton.png)
 
+Fetching geometry as well maps where those holdings sit: the six largest private owners' parcels, colored, across Hamilton County.
+
+![Map of Hamilton County parcels with the six largest private owners colored](/assets/img/parcel_lineage_hamilton_map.png)
+
 **Approach:**
 
 *Reconciliation has two knobs, and both are honest by design.* Fuzzy clustering (with legal suffixes ignored) collapses spelling variants of one name; a curated keyword alias rolls distinct names of a known corporate family up to one parent. The alias is a hand-supplied input, not inferred, so it groups the seven Lyme Timber names without fabricating relationships that a shared word alone cannot prove. The fully precise path, a corporate-family table from public filings, plugs into `resolve_owners`.
