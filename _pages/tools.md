@@ -63,26 +63,26 @@ A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildabl
 
 **What it does:**
 
-- **Owner-name reconciliation** with no lookup table: normalize and fuzzy-cluster the spelling variants of a raw roll ("Northway Forests, LLC" / "NORTHWAY FORESTS LLC") into one canonical owner, so the largest holders surface.
+- **Owner-name reconciliation** with no lookup table: normalize (ignoring legal suffixes like LLC and CO) and fuzzy-cluster the spelling variants of a raw roll into one canonical owner, and optionally roll a known corporate family up under one parent via a curated keyword alias.
 - **Entity resolution** against a corporate-family table: roll spelling-clean owners up to their ultimate parent, flagging low-confidence matches for human review.
 - **Change detection** between two time-stamped snapshots: classify each parcel as owner change, boundary change (including partial sell-offs), both, or no change, with an area threshold that filters survey noise.
 
-**Live on real data:** `fetch_parcels` pulls any public ArcGIS REST parcel layer via a `ParcelSource` config. Pointed at New York's statewide service for Hamilton County (Adirondack timberland), the reconciliation collapses 711 raw owner strings to 690 and re-ranks the largest landowners:
+**Live on real data:** `fetch_parcels` pulls any public ArcGIS REST parcel layer via a `ParcelSource` config. Pointed at New York's statewide service for Hamilton County (Adirondack timberland), the reconciliation collapses 711 raw owner strings to 684, and a curated alias rolls a known timberland family together:
 
 ```
-   776,227 ac  State Of New York                 [2 spellings merged]
+   776,227 ac  State Of New York        [2 names merged]
+    50,970 ac  Lyme Timber              [7 names merged]
     44,661 ac  Northway Forests, LLC
-    36,410 ac  Lyme Adirondack Timberlands II     [3 spellings merged]
-    36,192 ac  Whitney Industries LLC             [2 spellings merged]
+    36,192 ac  Whitney Industries LLC   [2 names merged]
 ```
 
-The merged-spelling counts are the point: without reconciliation, a company's holdings split across name variants and it looks smaller than it is.
+The merged-name counts are the point: Lyme Timber is recorded under 7 distinct LLC names ("Lyme Adirondack Timberlands II", "Lyme / LAT I, LLC", "Lyme Adk Timberlands II, LLC", and more), so without reconciliation it looks like several mid-sized owners instead of the single largest private holder in the county.
 
-![Largest private landowners in Hamilton County, NY after owner-name reconciliation; owners whose spelling variants were merged are highlighted](/assets/img/parcel_lineage_hamilton.png)
+![Largest private landowners in Hamilton County, NY after owner-name reconciliation; owners whose names were merged are highlighted](/assets/img/parcel_lineage_hamilton.png)
 
 **Approach:**
 
-*Reconciliation and corporate-family resolution are separate, complementary steps.* Name clustering collapses spelling variants of one string; a corporate-family table (from public Secretary of State filings) is what links distinct LLCs to a single parent. The Adirondack run shows the seam: three "Lyme" LLCs cluster only where their names already match, and a family table would roll the rest up to Lyme Timber.
+*Reconciliation has two knobs, and both are honest by design.* Fuzzy clustering (with legal suffixes ignored) collapses spelling variants of one name; a curated keyword alias rolls distinct names of a known corporate family up to one parent. The alias is a hand-supplied input, not inferred, so it groups the seven Lyme Timber names without fabricating relationships that a shared word alone cannot prove. The fully precise path, a corporate-family table from public filings, plugs into `resolve_owners`.
 
 *County-agnostic loader.* `ParcelSource` names the service URL and the owner, id, and acres fields, so pointing at another county or state is a config change, not code.
 
