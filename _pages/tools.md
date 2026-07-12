@@ -84,4 +84,4 @@ The merged-spelling counts are the point: without reconciliation, a company's ho
 
 *County-agnostic loader.* `ParcelSource` names the service URL and the owner, id, and acres fields, so pointing at another county or state is a config change, not code.
 
-*Clean-room and public.* This reimplements ownership-intelligence work I built at The Conservation Fund using only public data and public code, so it can be read and run. Typed, ruff-linted, hermetic tests (no network in the suite), MIT-licensed.
+*Public and verifiable.* Built on public data and public code, so it can be read and run end to end. Typed, ruff-linted, hermetic tests (no network in the suite), MIT-licensed.

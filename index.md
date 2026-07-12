@@ -72,7 +72,6 @@ An open-source library that reconciles messy county parcel owner names into thei
 An automated pipeline that resolves LLC ownership structures in county parcel records and detects ownership and boundary changes between time-stamped snapshots using spatial overlay analysis and symmetric difference.
 **93% reduction in manual QA review. Longitudinal ownership intelligence across the Southeast U.S.**
 `Python` `SQL` `Data Harmonization` `Relational DB` `Spatial Overlay` `ReGrid`
-*Open-source, public-data version: [parcel-lineage](/tools/#parcel-lineage).*
 
 ---
 
