@@ -50,3 +50,38 @@ A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildabl
 *Cache aggressively at stage boundaries.* The pipeline writes each screen's per-polygon coverage fractions to a content-addressed GeoParquet keyed by (polygon hash, screen name, classes, threshold). Re-runs with the same inputs replay from cache. The Streamlit demo above demonstrates the payoff: changing thresholds re-uses the cached fractions and only recomputes a boolean, which is why slider moves feel instant.
 
 *Engineering bar: typed Python (mypy), ruff-linted, hermetic pytest fixtures (no network in tests), GitHub Actions CI on Python 3.11 and 3.12, MIT-licensed, no proprietary dependencies.* The non-obvious choice was making the tests hermetic against a synthetic 4-quadrant raster fixture instead of pulling real data: it means CI runs in under a second and contributors don't need network access or USDA accounts to verify a change.
+
+---
+
+## parcel-lineage
+
+**A Python library that reconciles messy county parcel owner names into their true holdings and tracks ownership change over time.** County rolls record the same company under many spellings and bury the controlling entity under tiers of shell LLCs; parcel-lineage cuts through that to answer who actually owns what.
+
+**Repository:** [github.com/ahotimski00/parcel-lineage](https://github.com/ahotimski00/parcel-lineage)
+
+**Stack:** Python · pandas · rapidfuzz · shapely · requests · pytest · typed (mypy) · ruff-linted · MIT
+
+**What it does:**
+
+- **Owner-name reconciliation** with no lookup table: normalize and fuzzy-cluster the spelling variants of a raw roll ("Northway Forests, LLC" / "NORTHWAY FORESTS LLC") into one canonical owner, so the largest holders surface.
+- **Entity resolution** against a corporate-family table: roll spelling-clean owners up to their ultimate parent, flagging low-confidence matches for human review.
+- **Change detection** between two time-stamped snapshots: classify each parcel as owner change, boundary change (including partial sell-offs), both, or no change, with an area threshold that filters survey noise.
+
+**Live on real data:** `fetch_parcels` pulls any public ArcGIS REST parcel layer via a `ParcelSource` config. Pointed at New York's statewide service for Hamilton County (Adirondack timberland), the reconciliation collapses 711 raw owner strings to 690 and re-ranks the largest landowners:
+
+```
+   776,227 ac  State Of New York                 [2 spellings merged]
+    44,661 ac  Northway Forests, LLC
+    36,410 ac  Lyme Adirondack Timberlands II     [3 spellings merged]
+    36,192 ac  Whitney Industries LLC             [2 spellings merged]
+```
+
+The merged-spelling counts are the point: without reconciliation, a company's holdings split across name variants and it looks smaller than it is.
+
+**Approach:**
+
+*Reconciliation and corporate-family resolution are separate, complementary steps.* Name clustering collapses spelling variants of one string; a corporate-family table (from public Secretary of State filings) is what links distinct LLCs to a single parent. The Adirondack run shows the seam: three "Lyme" LLCs cluster only where their names already match, and a family table would roll the rest up to Lyme Timber.
+
+*County-agnostic loader.* `ParcelSource` names the service URL and the owner, id, and acres fields, so pointing at another county or state is a config change, not code.
+
+*Clean-room and public.* This reimplements ownership-intelligence work I built at The Conservation Fund using only public data and public code, so it can be read and run. Typed, ruff-linted, hermetic tests (no network in the suite), MIT-licensed.
