@@ -78,6 +78,8 @@ A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildabl
 
 The merged-spelling counts are the point: without reconciliation, a company's holdings split across name variants and it looks smaller than it is.
 
+![Largest private landowners in Hamilton County, NY after owner-name reconciliation; owners whose spelling variants were merged are highlighted](/assets/img/parcel_lineage_hamilton.png)
+
 **Approach:**
 
 *Reconciliation and corporate-family resolution are separate, complementary steps.* Name clustering collapses spelling variants of one string; a corporate-family table (from public Secretary of State filings) is what links distinct LLCs to a single parent. The Adirondack run shows the seam: three "Lyme" LLCs cluster only where their names already match, and a family table would roll the rest up to Lyme Timber.
