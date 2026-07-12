@@ -67,6 +67,10 @@ A two-screen funnel against 25,000 San Diego County parcels (USGS LCMAP buildabl
 - **Entity resolution** against a corporate-family table: roll spelling-clean owners up to their ultimate parent, flagging low-confidence matches for human review.
 - **Change detection** between two time-stamped snapshots: classify each parcel as owner change, boundary change (including partial sell-offs), both, or no change, with an area threshold that filters survey noise.
 
+The ownership pipeline, end to end:
+
+<img src="/assets/img/parcel_lineage_workflow.png" width="760" alt="parcel-lineage ownership reconciliation workflow: fetch parcels, normalize owner names, reconcile owners, aggregate acreage, rank and map">
+
 **Live on real data:** `fetch_parcels` pulls any public ArcGIS REST parcel layer via a `ParcelSource` config. Pointed at New York's statewide service for Hamilton County (Adirondack timberland), the reconciliation collapses 711 raw owner strings to 684, and a curated alias rolls a known timberland family together:
 
 ```
@@ -82,7 +86,7 @@ The merged-name counts are the point: Lyme Timber is recorded under 7 distinct L
 
 Fetching geometry as well maps where those holdings sit: the six largest private owners' parcels, colored, across Hamilton County.
 
-![Map of Hamilton County parcels with the six largest private owners colored](/assets/img/parcel_lineage_hamilton_map.png)
+<img src="/assets/img/parcel_lineage_hamilton_map.png" width="480" alt="Map of Hamilton County parcels with the six largest private owners colored">
 
 **Approach:**
 
