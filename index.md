@@ -17,7 +17,7 @@ Geospatial Data Scientist at **The Conservation Fund** with an MS in Remote Sens
       <div class="archive__item-body">
         <h2 class="archive__item-title">Geospatial Analysis</h2>
         <div class="archive__item-excerpt">
-          <p>Land cover classification, change detection, and spatial data modeling. ArcGIS Pro, QGIS, Google Earth Engine, geopandas, rasterio. Recent: 17 years of Landsat across LA County's fire hazard zones.</p>
+          <p>Land cover classification, change detection, and spatial data modeling. ArcGIS Pro and arcpy (custom Python toolboxes), ArcGIS Online, QGIS, Google Earth Engine, geopandas, rasterio. Recent: 17 years of Landsat across LA County's fire hazard zones.</p>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@ Geospatial Data Scientist at **The Conservation Fund** with an MS in Remote Sens
 
 ### [cogsieve](/tools/#cogsieve)
 
-An open-source Python library that filters polygons by fractional class coverage of categorical rasters, reading windowed pixels directly from remote Cloud-Optimized GeoTIFFs instead of downloading scenes. Three runnable demos on public data: solar siting, tree equity, wildfire risk.
+Screening which parcels are mostly forested, buildable, or high-risk usually means downloading whole raster scenes and waiting through slow, artifact-prone zonal stats. cogsieve reads exact fractional class coverage straight from remote Cloud-Optimized GeoTIFFs, so an analyst can funnel a county's parcels through several suitability screens in seconds and hand planners a defensible shortlist the same day. Three runnable demos on public data: solar siting, tree equity, wildfire risk.
 **Open source (MIT), CI-tested, 30x faster than the standard pure-Python zonal-stats workflow.** [Live demo](https://cogsieve-vir5swvkd2a5fypnpyqlnn.streamlit.app/) · [GitHub](https://github.com/ahotimski00/cogsieve)
 `Python` `rasterio` `geopandas` `exactextract` `COG` `Streamlit`
 
@@ -77,15 +77,15 @@ An automated pipeline that resolves LLC ownership structures in county parcel re
 
 ### [ACEP Easement Eligibility Screening Tool](/projects/#farm-parcel)
 
-Automated USDA NRCS ACEP easement grant screening by applying SSURGO and NLCD raster criteria via REST services.
-**Analysis time: 20+ hours → 10 minutes. Projected $12,000/yr savings.**
-`Python` `ArcGIS Pro` `REST APIs` `SSURGO` `NLCD`
+Conservation staff were spending 20+ hours manually checking each farm parcel's ACEP easement eligibility, county by county in Web Soil Survey, a bottleneck on every grant cycle. I built an ArcGIS Pro Python toolbox (arcpy) that screens whole regions against live USDA SSURGO and NLCD services and returns a ranked, field-ready shortlist.
+**Analysis time: 20+ hours to 10 minutes. Projected $12,000/yr savings.**
+`Python` `arcpy` `ArcGIS Pro` `REST APIs` `SSURGO` `NLCD`
 
 ---
 
 ### [Urban Growth in Fire Hazard Zones](/projects/#fire-hazard)
 
-A 9-class Landsat change detection (2007-2024) paired with a full Olofsson accuracy assessment. New development expanded into LA County's very high fire hazard zones before the hazard designation caught up; the mapped extent corrects from ~16,600 ha to ~5,700 ha once bias-adjusted.
+In California, a Very High fire hazard designation triggers stricter wildfire building codes, so the map decides which new homes are built to that standard. Development expanded into LA County's very high zones during the years the maps went unrevised, much of it before the designation applied. The classification maps ~16,600 ha of it; a full Olofsson accuracy assessment corrects that to ~5,700 ha.
 `GEE` `Random Forest` `Landsat` `Accuracy Assessment`
 
 ---
@@ -104,6 +104,6 @@ A 9-class Landsat change detection (2007-2024) paired with a full Olofsson accur
 
 ## Get in touch
 
-Open to geospatial data science, remote sensing, and spatial ML roles.
+Open to geospatial data science, remote sensing, spatial ML, and solutions engineering roles.
 
 [Connect on LinkedIn](https://www.linkedin.com/in/al-hotimski/){: .btn .btn--primary}
